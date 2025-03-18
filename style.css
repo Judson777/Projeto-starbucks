@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+body {
+    padding-top: 20px;
+    padding-right: 100px;
+    padding-left: 100px;
+}
+
+.conteudo {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.textos {
+    width: 600px;
+}
+
+h2 {
+    color: #333;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+span {
+    color: #017143;
+    font-size: 70px;
+    font-weight: 900;
+}
+
+p {
+    font-size: 16px;
+}
+
+button {
+    background-color: #017143;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 40px;
+    transition: 0.5s;
+}
+
+button:hover {
+    background-color: #12dd88;
+}
+
+.img1 {
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 250px;
+}
+
+.img-copo {
+    inline-size: 340px;
+}
+
+.Menu {
+    display: flex;
+    justify-content: center;
+}
+
+.botao-menu:hover {
+    transform: translateY(-25px);
+
+}
+
+.botao-menu {
+    width: 60px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.circulo {
+    background: #017143;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    clip-path: circle(600px at right 800px);
+    z-index: -1;
+}
+
+.logo {
+    width: 80px;
+}
+
+@media (max-width: 1100px) {
+    body {
+        padding: 5px;
+    }
+
+    .textos {
+        width: 120%;
+        margin-top: 50px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    span {
+        font-size: 40px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    button {
+        padding: 8px;
+        margin-top: 15px;
+        border-radius: 30px;
+    }
+
+    .img1 {
+        width: 50%;
+        margin-top: 50px;
+        justify-content: flex-end;
+        margin-left: auto;
+        margin-top: 200px;
+    }
+
+    .img-copo {
+        inline-size: 90%;
+        margin-left: 300px;
+        margin-top: 300px;
+    }
+
+    .circulo {
+        clip-path: circle(200px at right 200px);
+        right: -50px;
+        top: 300px;
+    }
+
+    .logo {
+        width: 30px;
+    }
+
+    .Menu {
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .botao-menu {
+        width: 80px;
+        margin-bottom: 20px;
+        margin-left: 20px;
+    }
+    }
